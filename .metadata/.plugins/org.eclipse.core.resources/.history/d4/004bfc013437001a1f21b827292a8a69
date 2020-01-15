@@ -1,0 +1,10 @@
+package br.com.alura.bean;
+
+import java.io.Serializable;
+
+public class Produto implements Serializable{
+	
+	private String nome;
+	private double valor;
+
+}

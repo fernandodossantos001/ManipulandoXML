@@ -1,0 +1,82 @@
+package br.com.alura.bean;
+
+import java.io.Serializable;
+
+public class Produto implements Serializable,Comparable<Produto>{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
+	private String nome;
+	private double valor;
+	
+	public Produto(String nome, double valor) {
+		super();
+		this.nome = nome;
+		this.valor = valor;
+	}
+	
+	public Produto() {
+		
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	
+	public String getAll() {
+		return "Nome Produto: " + nome + "/n"+ "Preço: " + valor;
+	}
+
+	@Override
+	public int compareTo(Produto o) {
+		return nome.compareTo(o.getNome());
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		long temp;
+		temp = Double.doubleToLongBits(valor);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Produto other = (Produto) obj;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		if (Double.doubleToLongBits(valor) != Double.doubleToLongBits(other.valor))
+			return false;
+		return true;
+	}
+	
+	
+}
