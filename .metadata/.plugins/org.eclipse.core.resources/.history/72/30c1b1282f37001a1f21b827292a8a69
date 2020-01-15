@@ -1,0 +1,25 @@
+package br.com.alura.teste;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+public class TestXml {
+
+	public static void main(String[] args) {
+		DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
+		
+		DocumentBuilder newDocumentBuilder;
+		try {
+			newDocumentBuilder = fabrica.newDocumentBuilder();
+			newDocumentBuilder.parse("src/vendas.xml");
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+		
+}

@@ -1,0 +1,27 @@
+package br.com.alura.teste;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+
+public class TestXml {
+
+	public static void main(String[] args) {
+		DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
+		
+		DocumentBuilder newDocumentBuilder;
+		try {
+			newDocumentBuilder = fabrica.newDocumentBuilder();
+			Document parse = newDocumentBuilder.parse("src/vendas.xml");
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+		
+}
