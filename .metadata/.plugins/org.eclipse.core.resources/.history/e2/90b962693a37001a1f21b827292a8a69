@@ -15,12 +15,7 @@ public class TestProdutoXml {
 	private List<Produto> listaProdutos;
 	public static void main(String[] args) {
 		DocumentBuilderFactory fabrica = DocumentBuilderFactory.newInstance();
-		//validando documentos  XML
-		fabrica.setValidating(true);
-		// pegar arquivo de validação pelo name space
-		fabrica.setNamespaceAware(true);
-		// set a linguagem que estamos usando para o nosso schema
-		fabrica.setAttribute("http://java.sun.com/xml/jaxp/properties/schemaLanguage", "http://www.w3.org/2001/XMLSchema");
+		
 		
 		try {
 			DocumentBuilder newDocumentBuilder = fabrica.newDocumentBuilder();

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <venda moeda="real"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="formatoVendas.xsd">
+ xsi:noNamespaceSchemaLocation="{src/formatoVendas.xsd}">
 	<formaDePagamento>Cartão De Crédito </formaDePagamento>
- <!-- 	<produtos>
+	<produtos>
 		<produto>
 			<nome>Livro de xml </nome>
 			<preco>29.90</preco>
@@ -12,5 +12,5 @@
 			<nome>Livro de O.O objetos</nome>
 			<preco>29.90</preco>
 		</produto>
-	</produtos> -->
+	</produtos>
 </venda>
