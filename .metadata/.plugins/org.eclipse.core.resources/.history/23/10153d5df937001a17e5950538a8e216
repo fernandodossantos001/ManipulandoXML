@@ -1,6 +1,6 @@
+<!-- Validador de XML versao melhorada, mais simple e organizada -->
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
-<!-- Validador de XML versao melhorada, mais simple e organizada -->
 	<xsd:element name="venda">
 		<xsd:complexType>
 			<xsd:sequence>
