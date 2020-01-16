@@ -4,6 +4,20 @@
 		<complexType>
 			<sequence>
 				<element name="formaDePagamento" type="string" />
+				<element name="produtos">
+					<complexType>
+						<sequence>
+							<element name="produto" maxOccurs="unbounded">
+							<complexType>
+								<sequence>
+									<element name="nome" type="string"/>
+									<element name="preco" type="double"/>
+								</sequence>
+							</complexType>
+						</element>
+						</sequence>
+					</complexType>
+				</element>
 			</sequence>
 			<attribute name="moeda" type="string" />
 		</complexType>
