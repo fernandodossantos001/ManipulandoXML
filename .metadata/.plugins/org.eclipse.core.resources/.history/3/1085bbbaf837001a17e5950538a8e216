@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" >
+	<element name="venda">
+		<complexType>
+			<sequence>
+				<element name="formaDePagamento" type="string" />
+				<element name="produtos">
+					<complexType>
+						<sequence>
+							
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+			<attribute name="moeda" type="string" />
+		</complexType>
+	</element>
+	
+	<element name="produto" >
+		<complexType>
+			<sequence>
+				<element name="nome" type="string"/>
+				<element name="preco" type="double"/>
+			</sequence>
+		</complexType>
+	</element>
+	
+</schema>

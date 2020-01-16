@@ -23,6 +23,7 @@ public class TestProdutoXml {
 		fabrica.setAttribute("http://java.sun.com/xml/jaxp/properties/schemaLanguage", "http://www.w3.org/2001/XMLSchema");
 		
 		try {
+			//DocumentBuilder carrega o XML na memória da VM, código mais simples, porém consome mais recursos
 			DocumentBuilder newDocumentBuilder = fabrica.newDocumentBuilder();
 			Document document = newDocumentBuilder.parse("src/vendas.xml");
 			NodeList produtos = document.getElementsByTagName("produto");
