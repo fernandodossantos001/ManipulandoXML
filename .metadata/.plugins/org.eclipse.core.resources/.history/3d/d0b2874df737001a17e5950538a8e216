@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<venda moeda="real"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="formatoVendas.xsd">
+	<formaDePagamento>Cartão De Crédito </formaDePagamento>
+  	<produtos>
+		<produto>
+			<nome>Livro de xml </nome>
+			<preco>29.90</preco>
+		</produto>
+		
+	</produtos> 
+</venda>
