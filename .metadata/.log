@@ -1126,3 +1126,24 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jface.text 2 0 2020-01-15 22:08:37.047
+!MESSAGE 
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: 
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:99)
+	at org.eclipse.text.edits.TextEdit.<init>(TextEdit.java:153)
+	at org.eclipse.text.edits.MultiTextEdit.<init>(MultiTextEdit.java:65)
+	at org.eclipse.text.edits.CopySourceEdit.performSourceComputation(CopySourceEdit.java:266)
+	at org.eclipse.text.edits.CopySourceEdit.traverseSourceComputation(CopySourceEdit.java:260)
+	at org.eclipse.text.edits.TextEditProcessor.computeSources(TextEditProcessor.java:210)
+	at org.eclipse.text.edits.TextEditProcessor.executeDo(TextEditProcessor.java:195)
+	at org.eclipse.text.edits.TextEdit.dispatchPerformEdits(TextEdit.java:742)
+	at org.eclipse.text.edits.TextEditProcessor.performEdits(TextEditProcessor.java:158)
+	at org.eclipse.ltk.core.refactoring.TextChange.getPreviewDocument(TextChange.java:527)
+	at org.eclipse.ltk.core.refactoring.TextChange.getPreviewDocument(TextChange.java:401)
+	at org.eclipse.jdt.core.manipulation.CUCorrectionProposalCore.getAdditionalProposalInfo(CUCorrectionProposalCore.java:134)
+	at org.eclipse.jdt.ui.text.java.correction.CUCorrectionProposal.getAdditionalProposalInfo(CUCorrectionProposal.java:138)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
