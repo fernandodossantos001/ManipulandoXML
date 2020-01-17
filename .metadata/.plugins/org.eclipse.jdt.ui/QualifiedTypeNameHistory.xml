@@ -4,8 +4,24 @@
 <fullyQualifiedTypeName name="java.nio.file.attribute.AclEntry.Builder"/>
 <fullyQualifiedTypeName name="javax.xml.parsers.DocumentBuilderFactory"/>
 <fullyQualifiedTypeName name="org.w3c.dom.Element"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="org.xml.sax.XMLReader"/>
+<fullyQualifiedTypeName name="org.xml.sax.helpers.XMLReaderFactory"/>
+<fullyQualifiedTypeName name="org.xml.sax.InputSource"/>
+<fullyQualifiedTypeName name="java.net.ContentHandler"/>
+<fullyQualifiedTypeName name="br.com.alura.teste.leitorXML"/>
+<fullyQualifiedTypeName name="org.xml.sax.helpers.DefaultHandler"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="javax.xml.stream.XMLInputFactory"/>
+<fullyQualifiedTypeName name="javax.xml.stream.XMLEventReader"/>
 <fullyQualifiedTypeName name="br.com.alura.bean.Produto"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.sql.Array"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
