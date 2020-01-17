@@ -1,0 +1,19 @@
+package br.com.alura.teste;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+
+import br.com.alura.bean.Venda;
+
+public class MapeaXMLDireto {
+
+	public static void main(String[] args) {
+		try {
+			JAXBContext jaxbContext = JAXBContext.newInstance(Venda.class);
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
