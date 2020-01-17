@@ -37,23 +37,18 @@ public class TestProdutoXml {
 			String moeda = venda.getAttribute("moeda");
 			
 			System.out.println(moeda);
-			String exp = "/venda/produtos/produto[nome='Livro de O.O objetos']";
-//			String exp = "/venda/produtos/produto[contains(nome, 'Livro')]";
-//			String exp = "/venda/produtos/produto";
+			//String exp = "/venda/produtos/produto[nome='Livro']";
+			//String exp = "/venda/produtos/produto[contains(nome, 'Livro')]";
+			String exp = "/venda/produtos/produto";
 			XPath path = XPathFactory.newInstance().newXPath();
 			XPathExpression expression = path.compile(exp);
 			
 			NodeList produt = (NodeList) expression.evaluate(document, XPathConstants.NODESET);
 			
 			for (int i = 0; i < produt.getLength(); i++) {
-				Element itemProd = (Element) produt.item(i);
-				String nome = itemProd.getElementsByTagName("nome").item(0).getTextContent();
-				Double preco = Double.parseDouble(itemProd.getElementsByTagName("preco").item(0).getTextContent());
-				Produto produto =  new Produto(nome,preco);
-				System.out.println(produto.getAll());
+				
 			}
 			
-			System.out.println("---------------------");
 			
 			for (int i = 0; i < produtos.getLength(); i++) {
 				

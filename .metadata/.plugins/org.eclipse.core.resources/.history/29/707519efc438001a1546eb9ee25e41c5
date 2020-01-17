@@ -37,7 +37,7 @@ public class TestProdutoXml {
 			String moeda = venda.getAttribute("moeda");
 			
 			System.out.println(moeda);
-			String exp = "/venda/produtos/produto[nome='Livro de O.O objetos']";
+			String exp = "/venda/produtos/produto[nome='Livro de xml']";
 //			String exp = "/venda/produtos/produto[contains(nome, 'Livro')]";
 //			String exp = "/venda/produtos/produto";
 			XPath path = XPathFactory.newInstance().newXPath();
