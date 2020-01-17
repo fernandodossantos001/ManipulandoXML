@@ -1,0 +1,43 @@
+package br.com.alura.teste;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
+
+public class ConversorXmlHtml {
+
+	public static void main(String[] args) {
+		try {
+//			InputStream xsl = new FileInputStream("src/xmlParaHtml.xsl");
+//			StreamSource xslSource = new StreamSource(xsl); 
+//			
+//			InputStream xml = new FileInputStream("src/vendas.xml");
+//			StreamSource xmlSource = new StreamSource(xml); 
+//			Transformer parse = TransformerFactory.newInstance().newTransformer(xslSource);
+//			StreamResult output = new StreamResult("src/vendas.html");
+//			parse.transform(xmlSource, output);
+			
+
+			 InputStream xsl = new FileInputStream("src/xmlParaHtml.xsl");
+			    StreamSource xslSource = new StreamSource(xsl);
+
+			    InputStream dados  = new FileInputStream("src/vendas.xml");
+			    StreamSource xmlSource = new StreamSource(dados);
+
+			    StreamResult saida = new StreamResult("src/vendas.html");
+
+			    Transformer transformer = TransformerFactory.newInstance().newTransformer(xslSource);
+			    transformer.transform(xmlSource, saida);
+			    
+			    
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
