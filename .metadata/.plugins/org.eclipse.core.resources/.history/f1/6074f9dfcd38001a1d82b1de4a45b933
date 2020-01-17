@@ -1,0 +1,52 @@
+package br.com.alura.bean;
+
+import java.io.Serializable;
+
+public class Produto implements Serializable,Comparable<Produto>{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	
+	private String nome;
+	private double preco;
+	
+	public Produto(String nome, double preco) {
+		super();
+		this.nome = nome;
+		this.preco = preco;
+	}
+	
+	public Produto() {
+		
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getValor() {
+		return preco;
+	}
+
+	public void setValor(double preco) {
+		this.preco = preco;
+	}
+	
+	public String getAll() {
+		return "Nome Produto: " + nome + "\n"+ "Preço: " + preco;
+	}
+
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return getAll();
+	}
+}

@@ -1,0 +1,20 @@
+package br.com.alura.teste;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+public class ConversorXmlHtml {
+
+	public static void main(String[] args) {
+		try {
+			InputStream xsl = new FileInputStream("src/xmlParaHtml.sxl");
+			InputStream dados = new FileInputStream("src/vendas.xml");
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

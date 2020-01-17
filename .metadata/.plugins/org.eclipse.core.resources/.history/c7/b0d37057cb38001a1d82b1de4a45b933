@@ -1,0 +1,13 @@
+package br.com.alura.teste;
+
+import javax.xml.bind.JAXBContext;
+
+import br.com.alura.bean.Venda;
+
+public class MapeaXMLDireto {
+
+	public static void main(String[] args) {
+		JAXBContext.newInstance(Venda.class);
+	}
+
+}

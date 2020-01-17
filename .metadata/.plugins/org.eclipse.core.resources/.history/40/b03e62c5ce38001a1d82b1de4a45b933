@@ -1,0 +1,26 @@
+package br.com.alura.teste;
+
+import java.io.File;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+
+import br.com.alura.bean.Venda;
+
+public class MapeaXMLDireto {
+
+	public static void main(String[] args) {
+		try {
+			JAXBContext jaxbContext = JAXBContext.newInstance(Venda.class);
+			Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+			Venda vendas = (Venda) unmarshaller.unmarshal(new File("src/vendas.xml"));
+			
+			System.out.println(vendas.getAll());
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}
